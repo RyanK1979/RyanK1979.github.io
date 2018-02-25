@@ -1,0 +1,56 @@
+#projects img {
+  height: 350px;
+  width: 300px;
+}
+
+#about-me img {
+  border-radius: 30%;
+  height: 280px;
+  width: 240px;
+}
+
+#about-me {
+  padding-top: 10px;
+}
+
+#splash-page {
+  background-color: rgb(3, 24, 85);
+  color: rgb(222, 233, 235);
+  font-size: 30px;
+}
+
+header nav ul a {
+  text-decoration: none;
+  color: rgba(42, 218, 159, 0.767);
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+header {
+  background-color: black;
+}
+
+footer {
+  background-color: black;
+  color: rgba(42, 218, 159, 0.767);
+  font-size: 15px;
+}
+
+.contact-information a {
+  font-size: 30px;
+  color: blue;
+}
+
+footer a {
+  font-size: 30px;
+  color: blue;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  font-family: "Bree Serif", serif;
+}
