@@ -15,16 +15,25 @@ header {
   height: 100px;
   width: 100%;
 }
-header nav ul {
+
+header .name {
+  display:flex;
+  height: 50px;
+  font-size: 50px;
+  padding-left: 25px;
+
+}
+ #nav  {
   display: flex;
-  height: 100px;
-  justify-content: space-around;
-  align-items: center;
+  height: 25px;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding-right: 75px;
 }
 
-header nav ul li {
-  display: flex;
-  justify-content: center;
+ul .dropdown {
+  font-size: 20px;
+  color: black;
 }
 
 #splash-page {

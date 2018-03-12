@@ -7,53 +7,92 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Ryan Kuhn | Full Stack Dev</title>
 	<link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
-	<link rel="stylesheet" href="normalize.css">
-	<link rel="stylesheet" href="styles.css">
-	<link rel="stylesheet" href="layout.css">
+	<link rel="stylesheet" href="./src/css/normalize.css">
+	<link rel="stylesheet" href="./src/css/styles.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
 <body>
 
 	<div class="container">
 		<header id="top">
+			<h2 id="name">Ryan Kuhn</h2>
 			<nav>
-				<ul>
-					<li>
-						<a href="#about-me">About Me</a>
-					</li>
-					<li>
-						<a href="#projects">Projects</a>
-					</li>
-					<li>
-						<a href="#splash-page">Top</a>
-					</li>
-				</ul>
-			</nav>
+		<div id="nav">
+    		<ul class="hover">
+				        <li class="hoverli">
+				            <i class="fa fa-bars fa-4x" aria-hidden="true"></i>
+				            <ul class="file_menu">
+				                <li><a href="#about-me">About Me</a>
+				                </li>
+				                <li><a href="#projects">Projects</a>
+				                </li>
+				            </ul>
+				            <li>
+				    </ul>
+		</div>		
+    		</nav>
 		</header>
 
 		<section id="splash-page">
-			<h1>Ryan Kuhn - Junior Developer</h1>
+			<div class="slideshow-container">
+
+				  <!-- Full-width images with number and caption text -->
+				  <div class="mySlides fade">
+				    <div class="numbertext">1 / 3</div>
+				    <img class= "slidephoto" src="./images/webdesign.jpeg">
+				    <div class="text">Front end design</div>
+				  </div>
+
+				  <div class="mySlides fade">
+				    <div class="numbertext">2 / 3</div>
+				    <img class= "slidephoto" src="./images/zoey.jpg">
+				    <div class="text">My beautiful puppy Zoey</div>
+				  </div>
+
+				  <div class="mySlides fade">
+				    <div class="numbertext">3 / 3</div>
+				    <img class= "slidephoto" src="./images/zoey2.jpeg">
+				    <div class="text">Another shot of Zoey</div>
+				  </div>
+
+				  <!-- Next and previous buttons -->
+				  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+				</div>
+				<br>
+
+				<!-- The dots/circles -->
+				<div style="text-align:center">
+				  <span class="dot" onclick="currentSlide(1)"></span> 
+				  <span class="dot" onclick="currentSlide(2)"></span> 
+				  <span class="dot" onclick="currentSlide(3)"></span> 
+				</div>
+			
 		</section>
 		<section id="about-me">
 			<div class="about-me-row1">
-				<h2>Here is a brief background on me!</h2>
+				<h2>Full Stack Java Developer</h2>
 			</div>
 			<div class="about-me-row2">
 				<div class="pictures">
 					<div class="casual-content">
 						<img id="casual-pic" src="./images/ryan-k-final.jpg" alt="Current headshot">
-						<h3 class="caption">This is me!</h3>
+						<button id="myBtn">About me</button>
+							<div id="myModal" class="modal">
+							  <div class="modal-content">
+							    <span class="close">&times;</span>
+							    <p>I live in Columbus, Ohio.  I grew up in Wooster, Ohio</br>
+							    </br>
+							    I have taken a quirky route back to programming.  I intially started off a couple of years working towards a computer science degree from Ohio State University.  From there I went and became a Conductor, and then a Locomotive Engineer for Norfolk Southern.  I have now come full circle back to my original passion.  I think this leaves with me with a unique skill set from both fields that I can utilize to accomplish some big things.
+							    </p>
+							  </div>
+							</div>
 					</div>
 				</div>
 				<div class="description">
-					<p>I live in Columbus, Ohio.  I grew up in Wooster, Ohio</br>
-					</br>
-					I have taken a quirky route back to programming. I intially started off a couple of years working towards computer science
-					at Ohio State University. From there I went and became a Conductor, and then a Locomotive Engineer for Norfolk Southern.
-					I have now come full circle back to my original passion. I think this leaves me with a unique skill set from both fields
-					that I can utilize to accomplish some big things.
-				</p>
-			</div>
+					
+				</div>
 
 			<div class="skills-info">
 				<div class="skills">
@@ -103,25 +142,31 @@
 				<a href="https://github.com/RyanK1979/virtual-pet-shelter" target="_blank">
 					<img src="./images/petshelter.jpg" alt="Virtual Pet Shelter">
 				</a>
-				<h3>Virtual Pet Shelter</h3>
-				<p>Developed a Virtual Pet shelter utilizing Java. You could feed, water, walk, even adopt out pets!</p>
+				<div class="project-details">
+			        <div class="click"> Click to read more </div>
+			        <div class="content"> Developed a Virtual Pet shelter utilizing Java. You could feed, water, walk, even adopt out pets! </div>
+			    </div>
 			</div>
 
 			<div class="project2">
 				<a href="https://github.com/RyanK1979/virtual-pets-amok" target="_blank">
 					<img src="./images/petsamok.jpg" alt="Virtual Pets Amok">
 				</a>
-				<h3>Virtual Pets Amok</h3>
-				<p>Designed an extension to the shelter. In this version there are multiple breeds, an ability to clean crates, even oil
-				the robot "pets".</p>
+				<div class="project-details">
+			        <div class="click"> Click to read more</div>
+			        <div class="content"> Designed an extension to the shelter. In this version there are multiple breeds, an ability to clean crates, even oil
+				the robot "pets".  This one really utilized the APIE principles of Abstract, Polymorphism, Inheritence, and Encapsulation. </div>
+    			</div>
 			</div>
 
 			<div class="project3">
 				<a href="https://github.com/RyanK1979/review-site" target="_blank">
 					<img src="./images/reviews.jpg" alt="Review Site">
 				</a>
-				<h3>Review Site</h3>
-				<p>Created a review site using Java, Spring boot, and Thymeleaf.</p>
+				<div class="project-details">
+        			<div class="click"> Click to read more </div>
+        			<div class="content"> Created a review site using Java, Spring boot, and Thymeleaf.  This was my first full stack application. </div>
+    </div>				
 			</div>
 		</div>
 	</section>
@@ -143,6 +188,7 @@
 	</div>
 </footer>
 </div>
+<script src="./src/js/app.js"></script>
 </body>
 
 </html>
